@@ -25,3 +25,22 @@ Press `v` or `V` key to go into `Visual Mode` (block cursor). It's used for sele
 
 - `v`: Select single character.
 - `V`: Select the whole line.
+
+While in visual mode, use navigation keys to select text.
+
+## Exercise
+
+Practice navigation using `h, j, k, l` key.
+
+Change the name to 'James Bone' using insert mode.
+
+```js
+const name = 'James';
+```
+
+Use `V` and `j` to select both lines. Press `<ESC>` to go back to normal mode.
+
+```js
+const a = 1;
+const b = 2;
+```
