@@ -146,6 +146,7 @@ property: value;
 - `0`: Move to the beginning of a line.
 - `^`: Move to the first non-blank character of a line.
 - `$`: Move to the end of a line.
+- `t{char}`: Move till character (just before character).
 - `f{char}`: Find the character on the current line and move the cursor on it.
   - `;` to go to the next occurrence.
   - `,` to go to the previous occurrence.
@@ -180,6 +181,8 @@ const list = [1, 2, 3, 4, 5];
 ## Special Navigation
 
 - `%`: Go to matching `({[]})`.
+- `m{char}`: Mark line.
+  - `'{char}` Go to the marked line.
 - `gd`: Go to definition.
 - `gf`: Go to a file in an import.
 
