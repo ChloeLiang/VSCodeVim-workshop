@@ -3,9 +3,12 @@
 - `v`: Character-wise Visual mode.
 - `V`: Line-wise visual mode.
 
-Use `{v|V}{motion}{operator}` performs an action on selected text.
+Use `{v|V}{motion}{operator}` to perform an action on selected text.
 
-- `v%d`: Select a code block and delete it.
+- `V%d`: Select a code block and delete it.
+
+**Exercise**:
+Delete the "batters" block.
 
 ```json
 {
@@ -33,10 +36,29 @@ Use `{v|V}{motion}{operator}` performs an action on selected text.
 }
 ```
 
+**Exercise**:
+Make the second heading the same as the first one (copy & paste).
+
+```json
+{
+  "items": [
+    {
+      "heading": "This is an awesome heading"
+    },
+    {
+      "heading": "Heading"
+    }
+  ]
+}
+```
+
 - `:sort`: Sort alphabetically.
 - `:sort u`: Sort and remove duplicate lines.
 - `:sort!`: Sort in reverse order.
 - `:sort! u`: Sort in reverse order and remove duplicate lines.
+
+**Exercise**:
+Sort the CSS properties.
 
 ```css
 .block {
@@ -47,4 +69,14 @@ Use `{v|V}{motion}{operator}` performs an action on selected text.
   padding: 1rem;
   margin: 1rem;
 }
+```
+
+- `u`: Change to lowercase.
+- `U`: Change to uppercase.
+
+**Exercise**:
+Convert the text to uppercase.
+
+```html
+<p>Lorem ipsum</p>
 ```
