@@ -17,8 +17,6 @@ These 4 keys behave like arrow keys:
 > `word`: A sequence of letters, digits and underscores, or a sequence of
 > other non-blank characters, separated with white space. An empty line is
 > also considered to be a word.
->
-> `WORD`: A sequence of non-blank characters, separated with white space.
 
 - `w`: (word) Move to the beginning of the next word.
 
@@ -39,6 +37,8 @@ w  ww ww  ww
 property: value;
 w       w w    w
 ```
+
+> `WORD`: A sequence of non-blank characters, separated with white space.
 
 - `W`: (WORD) Move to the beginning of the next WORD forwards.
 
@@ -166,11 +166,11 @@ property: value;
 ```js
 // Try 'f(', 'f{'.
 function add(a, b) {
-  // '0' goes to the beginning. '^' goes to 'r'.
+  // 0 goes to the beginning. ^ goes to r
   return a + b;
 }
 
-// Try 'f,'. Repeat the search using ';' or ','.
+// Try f, and repeat the search using ; or ,
 const list = [1, 2, 3, 4, 5];
 ```
 
@@ -195,10 +195,10 @@ const list = [1, 2, 3, 4, 5];
 - `%`: Go to matching `({[]})`.
 - `m{char}`: Mark line.
   - `'{char}` Go to the marked line.
-- `gd`: Go to definition.
-- `gf`: Go to a file in an import.
 
 ```js
+// Try ma, gg, and 'a.
+// Try f{ and %.
 const enqueue = (item) => {
   const queue = [];
   queue.push(item);
@@ -212,6 +212,9 @@ const enqueue = (item) => {
   - `n`: Move to the next match.
   - `N`: Move to the previous match.
 - `?{pattern}`: Search backward in a file.
+
+**Exercise**:
+Search "Move" and navigate each occurrence.
 
 ## Counts
 
