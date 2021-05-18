@@ -1,5 +1,17 @@
 # Motion
 
+## Basic Navigation
+
+By default, Vim starts in `Normal Mode` (blinking block cursor). You can move
+cursor and execute command in this mode.
+
+These 4 keys behave like arrow keys:
+
+- `h`: Move cursor to the left by one character.
+- `j`: Move cursor downwards by one line.
+- `k`: Move cursor upwards by one line.
+- `l`: Move cursor to the right by one character.
+
 ## Word Navigation
 
 > `word`: A sequence of letters, digits and underscores, or a sequence of

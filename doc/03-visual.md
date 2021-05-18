@@ -1,5 +1,7 @@
 # Visual Mode
 
+Press `v` or `V` key to go into `Visual Mode` (block cursor). It's used for selecting text.
+
 - `v`: Character-wise Visual mode.
 - `V`: Line-wise visual mode.
 

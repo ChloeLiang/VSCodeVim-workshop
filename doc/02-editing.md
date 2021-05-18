@@ -2,6 +2,11 @@
 
 ## Insertion
 
+Press `i` key to go into `Insert Mode` (blinking line cursor). It's used for
+editing text.
+
+Press `<ESC>` Key to go back to `Normal Mode`.
+
 - `i`: Insert before cursor.
 - `I`: Insert before the first non-blank character of a line.
 - `a`: Insert after cursor.
