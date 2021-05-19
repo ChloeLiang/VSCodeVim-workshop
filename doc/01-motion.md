@@ -163,6 +163,10 @@ property: value;
   - `;` to go to the next occurrence.
   - `,` to go to the previous occurrence.
 
+**Exercise 1**:
+
+Navigate the following code.
+
 ```js
 // Try 'f(', 'f{'.
 function add(a, b) {
@@ -196,6 +200,10 @@ const list = [1, 2, 3, 4, 5];
 - `m{char}`: Mark line.
   - `'{char}` Go to the marked line.
 
+**Exercise 2**:
+
+Navigate the code.
+
 ```js
 // Try ma, gg, and 'a.
 // Try f{ and %.
@@ -213,7 +221,8 @@ const enqueue = (item) => {
   - `N`: Move to the previous match.
 - `?{pattern}`: Search backward in a file.
 
-**Exercise**:
+**Exercise 3**:
+
 Search "Move" and navigate each occurrence.
 
 ## Counts

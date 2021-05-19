@@ -9,7 +9,8 @@ Use `{v|V}{motion}{operator}` to perform an action on selected text.
 
 - `V%d`: Select a code block and delete it.
 
-**Exercise**:
+**Exercise 1**:
+
 Delete the "batters" block.
 
 ```json
@@ -38,7 +39,8 @@ Delete the "batters" block.
 }
 ```
 
-**Exercise**:
+**Exercise 2**:
+
 Make the second heading the same as the first one (copy & paste).
 
 ```json
@@ -59,7 +61,8 @@ Make the second heading the same as the first one (copy & paste).
 - `:sort!`: Sort in reverse order.
 - `:sort! u`: Sort in reverse order and remove duplicate lines.
 
-**Exercise**:
+**Exercise 3**:
+
 Sort the CSS properties.
 
 ```css
@@ -76,7 +79,8 @@ Sort the CSS properties.
 - `u`: Change to lowercase.
 - `U`: Change to uppercase.
 
-**Exercise**:
+**Exercise 4**:
+
 Convert the text to uppercase.
 
 ```html

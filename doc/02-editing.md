@@ -15,6 +15,31 @@ Press `<ESC>` Key to go back to `Normal Mode`.
 - `O`: Insert above a line.
 - `R`: Start replacing from the cursor.
 
+**Exercise 1**:
+
+Make the second code block the same as the first one.
+
+```css
+.container {
+  align-items: center;
+  background: url('/path-to-image');
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+}
+```
+
+```css
+.container {
+  background: url('/path');
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 2rem;
+}
+```
+
 ## Single Character Operation
 
 - `x`: Delete the character under the cursor.
@@ -22,9 +47,25 @@ Press `<ESC>` Key to go back to `Normal Mode`.
 - `s`: Delete the character under the cursor and switches to insert mode.
 - `~`: Switch the case of a single character.
 
+**Exercise 2**:
+
+Fix the text: This is a paragraph.
+
+```html
+<p>ttHis Is a pAragggraphhh.</p>
+```
+
 ## Undo
 
 - `u`: Undo the last change.
+
+**Exercise 3**:
+
+Change "paragraph" to "Paragraph" and undo the change.
+
+```html
+<p>This is a paragraph.</p>
+```
 
 ## Operators
 
@@ -52,6 +93,31 @@ Use `{operator}{count}{motion}` to perform an action {count} times.
 - `gU$`: Change to uppercase from the cursor to the end of a line.
 - `>7j`: Indent current line and 7 lines below to the right.
 
+**Exercise 4**:
+
+Delete the first sentence.
+
+```html
+<p>This is the first sentence. This is the second sentence.</p>
+```
+
+**Exercise 5**:
+
+Change "myFunc" to "sum".
+
+```js
+const myFunc = (a, b) => a + b;
+```
+
+**Exercise 6**:
+
+Copy the sentence and paste into the HTML tag.
+
+```html
+Copy this sentence and insert into the tag below.
+<p></p>
+```
+
 ## Operator Shorthand
 
 - `dd`: Delete a whole line.
@@ -62,6 +128,33 @@ Use `{operator}{count}{motion}` to perform an action {count} times.
 - `P`: Paste before the cursor.
 - `>>`: Indent current line to the right.
 - `<<`: Indent current line to the left.
+
+**Exercise 7**:
+
+Change border to none.
+
+```css
+.box {
+  border: 1px solid black;
+}
+```
+
+**Exercise 8**:
+
+Duplicate the line.
+
+```html
+<h3>H3 can be used for the heading.</h3>
+```
+
+**Exercise 9**:
+
+Delete the second line.
+
+```js
+<p>This is a paragraph.</p>
+<p>Delete this line.</p>
+```
 
 ## Text Object
 
@@ -102,11 +195,47 @@ Use `{operator}{a|i}{text object}` to perform an action with a text object.
 - `dit`: Delete everything inside an HTML tag.
 - `dat`: Delete everything inside an HTML tag including the tag.
 
+**Exercise 10**:
+
+Change the text inside span to "Vim workshop".
+Change everything inside h1 to "Vim workshop".
+
+```html
+<h1><span>Change inner tag</span></h1>
+```
+
+**Exercise 11**:
+
+Copy the content inside "heading" to "subheading".
+
+```json
+{
+  "heading": "This is an optional paragraph.",
+  "subHeading": ""
+}
+```
+
+**Exercise 12**:
+
+Delete everything inside {}.
+
+```js
+function validateForm() {
+  var x = document.forms['myForm']['fname'].value;
+  if (x == '') {
+    alert('Name must be filled out');
+    return false;
+  }
+}
+```
+
 ## Repeat the Last Change
 
 - `.`: Repeat the last change.
 
-Use `ciw` to change the text "easy" to "hard", and use `.` to repeat your change.
+**Exercise 13**:
+
+Change the text "easy" to "hard".
 
 ```txt
 Learn Vim the easy way.
