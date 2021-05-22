@@ -18,165 +18,24 @@ These 4 keys behave like arrow keys:
 > other non-blank characters, separated with white space. An empty line is
 > also considered to be a word.
 
-- `w`: (word) Move to the beginning of the next word.
-
-```txt
-^
-my_var_1
-w
-
-^
-function add() { }
-w        w  w  w w
-
-^
-197.18.123.23
-w  ww ww  ww
-
-^
-property: value;
-w       w w    w
-```
-
 > `WORD`: A sequence of non-blank characters, separated with white space.
 
+- `w`: (word) Move to the beginning of the next word.
 - `W`: (WORD) Move to the beginning of the next WORD forwards.
-
-```txt
-^
-my_var_1
-W
-
-^
-function add() { }
-W        W     W W
-
-^
-197.18.123.23
-W
-
-^
-property: value;
-W         W
-```
-
 - `b`: (back) Move to the beginning of a word backwards.
-
-```txt
-b
-my_var_1
-       ^
-
-b        b  b  b b
-function add() { }
-                 ^
-b  bb bb  bb
-197.18.123.23
-            ^
-b       b b    b
-property: value;
-               ^
-```
-
 - `B`: (back) Move to the beginning of a WORD backwards.
-
-```txt
-B
-my_var_1
-       ^
-
-B        B     B B
-function add() { }
-                 ^
-B
-197.18.123.23
-            ^
-B         B
-property: value;
-               ^
-```
-
 - `e`: (end) Move to the end of a word.
-
-```txt
-^
-my_var_1
-       e
-
-^
-function add() { }
-       e   e e e e
-
-^
-197.18.123.23
-  ee ee  ee e
-
-^
-property: value;
-       ee     ee
-```
-
-- `E`: (end) Move to the end of a WORD.
-
-```txt
-^
-my_var_1
-       E
-
-^
-function add() { }
-       E     E E E
-
-^
-197.18.123.23
-            E
-
-^
-property: value;
-        E      E
-```
-
 - `ge`: Move to the end of a word backwards.
-
-```txt
-       *
-my_var_1
-       ^
-       *   * * * *
-function add() { }
-                 ^
-  ** **  ** *
-197.18.123.23
-            ^
-       **     **
-property: value;
-               ^
-```
 
 ## Horizontal Navigation
 
 - `0`: Move to the beginning of a line.
 - `^`: Move to the first non-blank character of a line.
-- `$`: Move to the end of a line.
+- **`$`**: Move to the end of a line.
 - `t{char}`: Move till character (just before character).
 - `f{char}`: Find the character on the current line and move the cursor on it.
   - `;` to go to the next occurrence.
   - `,` to go to the previous occurrence.
-
-**Exercise 1**:
-
-Navigate the following code.
-
-```js
-// Try 'f(', 'f{'.
-function add(a, b) {
-  // 0 goes to the beginning. ^ goes to r
-  return a + b;
-}
-
-// Try f, and repeat the search using ; or ,
-const list = [1, 2, 3, 4, 5];
-```
 
 ## Vertical Navigation
 
@@ -200,30 +59,12 @@ const list = [1, 2, 3, 4, 5];
 - `m{char}`: Mark line.
   - `'{char}` Go to the marked line.
 
-**Exercise 2**:
-
-Navigate the code.
-
-```js
-// Try ma, gg, and 'a.
-// Try f{ and %.
-const enqueue = (item) => {
-  const queue = [];
-  queue.push(item);
-  return queue;
-};
-```
-
 ## Search Navigation
 
 - `/{pattern}`: Search forward in a file.
   - `n`: Move to the next match.
   - `N`: Move to the previous match.
 - `?{pattern}`: Search backward in a file.
-
-**Exercise 3**:
-
-Search "Move" and navigate each occurrence.
 
 ## Counts
 

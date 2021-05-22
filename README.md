@@ -21,16 +21,25 @@ In VSCode, press `Cmd-Shift-P`. Search and open `Preferences: Open Settings (JSO
 In the settings JSON file, add the following:
 
 ```json
-  "vim.useSystemClipboard": true,
+{
+  "vim.useSystemClipboard": true
+}
+```
+
+`useSystemClipboard` allows us to copy text outside of VSCode and paste it into
+VSCode editor using Vim command.
+
+**Optional Settings**:
+
+```json
+{
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
       "after": ["<Esc>"]
     }
   ]
+}
 ```
-
-`useSystemClipboard` allows us to copy text outside of VSCode and paste it into
-VSCode editor using Vim command.
 
 `insertModeKeyBindings` allows us to press `jj` to return to normal mode.
