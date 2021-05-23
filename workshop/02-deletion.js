@@ -73,7 +73,7 @@ function findDuplicate(arr) {
 }
 
 // Combine d operator with text object (w, t, p, (), {}, [], <>).
-// d{i|a|s}{text object}
+// d{i|a}{text object}
 
 function findDuplicateInPlace(arr) {
   /**
@@ -93,12 +93,6 @@ function findDuplicateInPlace(arr) {
    * dit - Delete inner tag.
    */
   const html = '<p>This is a paragraph <a href="url">link</a></p>';
-
-  /**
-   * Task: Delete the span tag.
-   * dst - Delete surrounding tag.
-   */
-  const delSurrounding = '<p><span>This is a paragraph.</span></p>';
 
   /**
    * Task: Delete this if statement.
@@ -139,5 +133,35 @@ function findDuplicateInPlace(arr) {
     }
   }
 
+  /**
+   * Task: Delete this for loop.
+   * f{: Move cursor to {.
+   * V: Select a line.
+   * %: Move to the matching }.
+   * d: Delete selected text.
+   */
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0 || arr[i] > arr.length - 1) {
+      return false;
+    }
+
+    while (arr[i] !== i) {
+      const temp = arr[i];
+      if (arr[i] === arr[temp]) {
+        return arr[i];
+      }
+      arr[i] = arr[temp];
+      arr[temp] = temp;
+    }
+  }
   return false;
 }
+
+// Vim Surround
+// https://github.com/tpope/vim-surround
+
+/**
+ * Task: Delete single quote.
+ * ds' - Delete surrounding single quote.
+ */
+const number = '12345';

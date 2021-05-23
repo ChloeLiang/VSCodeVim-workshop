@@ -1,6 +1,7 @@
 /**
  * By default, Vim starts in normal mode.
  * Press i to enter insert mode.
+ * Press v or V to enter visual mode.
  * Press Esc to go back to normal mode.
  */
 
