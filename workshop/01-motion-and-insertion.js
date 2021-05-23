@@ -61,6 +61,5 @@ log('VSCode Vim workshop');
  * /workshop - Search next occurrence of "workshop".
  * n - Move to the next match.
  * N: Move to the previous match.
- * ?workshop - Search previous occurrence of "workshop".
  */
 console.log('Vim workshop');

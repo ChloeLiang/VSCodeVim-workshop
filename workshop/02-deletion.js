@@ -95,15 +95,6 @@ function findDuplicateInPlace(arr) {
   const html = '<p>This is a paragraph <a href="url">link</a></p>';
 
   /**
-   * Task: Delete this if statement.
-   * dip: Delete inner paragraph.
-   */
-
-  if (!arr || arr.length <= 0) {
-    return false;
-  }
-
-  /**
    * Task: Delete everything inside the array.
    * di[ - Delete inner [].
    */
