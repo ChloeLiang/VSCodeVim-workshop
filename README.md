@@ -42,4 +42,12 @@ VSCode editor using Vim command.
 }
 ```
 
-`insertModeKeyBindings` allows us to press `jj` to return to normal mode.
+`insertModeKeyBindings` allows us change the key bindings in INSERT mode.
+This setting allows us to press `jj` to return to normal mode.
+
+## Getting Started
+
+Head to [the first workshop](workshop/01-motion-and-insertion.js) to start
+learning!
+
+You can also find the Vim command reference under `doc` folder.
